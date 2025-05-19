@@ -1,3 +1,5 @@
+// compile with: g++ -std=c++11 maps_unordered_ordered.cpp -o maps && ./maps
+#include <vector>
 #include <iostream>
 #include <unordered_map>
 #include <map>
@@ -40,6 +42,17 @@ using namespace std;
  *
  * */
 
+unordered_map<int, int> countFrequency(vector<int>& nums){
+	unordered_map<int, int> mp;
+	for(int num : nums){
+		mp[num]++;
+		cout << num << " -> " << mp[num] << endl;
+	}
+	return mp;
+}
+
 int main(){
+	vector<int> nums = {1, 3, 3, 5, 1, 3, 7};
+	countFrequency(nums);
 	return 0;
 }
