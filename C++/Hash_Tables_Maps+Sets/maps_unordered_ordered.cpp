@@ -42,10 +42,10 @@ using namespace std;
  *
  * */
 
-unordered_map<int, int> countFrequency(vector<int>& nums){
-	unordered_map<int, int> mp;
+unordered_map<int, int> countFrequency(vector<int>& nums){ // this function will return an unordered map
+	unordered_map<int, int> mp; // initialize unordered map called mp which will have an int key and int value pair
 	for(int num : nums){
-		mp[num]++;
+		mp[num]++; // in our mp unordered map for each num in nums we add 1 to that specific keys value
 		cout << num << " -> " << mp[num] << endl;
 	}
 	return mp;
