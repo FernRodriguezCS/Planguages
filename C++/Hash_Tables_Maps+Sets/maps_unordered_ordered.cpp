@@ -42,6 +42,7 @@ using namespace std;
  *
  * */
 
+// EX: 1 Count frequency
 unordered_map<int, int> countFrequency(vector<int>& nums){ // this function will return an unordered map
 	unordered_map<int, int> mp; // initialize unordered map called mp which will have an int key and int value pair
 	for(int num : nums){
@@ -51,8 +52,25 @@ unordered_map<int, int> countFrequency(vector<int>& nums){ // this function will
 	return mp;
 }
 
+// EX 2: First Unique element
+int firstUnique(vector<int>& nums){
+	unordered_map<int, int> tracker; // initialize unordered map to track occurences
+	for(int num : nums){
+		tracker[num]++;
+		cout << "Value: " << num << " -> Occurences: " << tracker[num] << endl; 
+	}
+	for(int num : nums){ // go through initial nums vector to find first element with only one unique value
+		if(tracker[num] == 1){ 
+			return num; // this is the first one with the unique element in nums vector
+		}
+	}
+	return -1; // meaning there are no unique values inside the vector
+}
+
 int main(){
-	vector<int> nums = {1, 3, 3, 5, 1, 3, 7};
-	countFrequency(nums);
+	// vector<int> nums = {1, 3, 3, 5, 1, 3, 7}; // For Example 1
+	vector<int> nums = {4, 5, 1, 2, 0, 4, 5, 2}; // For Example 2
+	// countFrequency(nums);
+	firstUnique(nums);
 	return 0;
 }
