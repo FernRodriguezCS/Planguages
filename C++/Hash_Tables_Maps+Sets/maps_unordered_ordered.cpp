@@ -69,8 +69,8 @@ int firstUnique(vector<int>& nums){
 
 int main(){
 	// vector<int> nums = {1, 3, 3, 5, 1, 3, 7}; // For Example 1
-	vector<int> nums = {4, 5, 1, 2, 0, 4, 5, 2}; // For Example 2
+	//vector<int> nums = {4, 5, 1, 2, 0, 4, 5, 2}; // For Example 2
 	// countFrequency(nums);
-	firstUnique(nums);
+	//firstUnique(nums);
 	return 0;
 }

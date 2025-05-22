@@ -74,7 +74,6 @@ using namespace std;
  * 	}
  * */
 
-
 /*
  * STRINGS
  * 1.  Declare and Initialize 
@@ -94,7 +93,6 @@ using namespace std;
  * 	string s = "abcdef";
  * 	s.erease(2,2); -> removes 'c' and 'd' -> "abef"
  * 	
- *
  * NOTES:
  *  -Strings specifically hold chars
  *  -Need #include <string>
@@ -104,10 +102,10 @@ using namespace std;
  *  -Loop through using for (char c : str) -> char c in string
  *
  */
-int main(int argc, char* argv[]){
+
+int main(/*int argc, char* argv[]*/){
 
 	/*
-	 *
 	 * argc & argv
 	 * What is argc?
 	 * -(argument count) is an int that stores the number of command line arguments passed 
@@ -121,32 +119,17 @@ int main(int argc, char* argv[]){
 	 *
 	 * SITE: https://www.geeksforgeeks.org/command-line-arguments-in-cpp/
 	 */
-	
-	cout << endl;	
-	cout << "You have entered " << argc << " arguments." << endl;
+
+	/*	
+		cout << endl;	
+		cout << "You have entered " << argc << " arguments." << endl;
 	// using a while loop to iterate through arguments
 	int j = 0;
 	while(j < argc){
-		cout << "Argument " << j << ": " << argv[j] << endl;
-		j++;
-	}	
-
-	vector <int> nums = {1,2,3,4,5};
-	// before anything happens
-	cout << endl;
-	cout << "Origional Vector: ";
-	for(int i = 0; i < nums.size(); i++){
-		cout << nums[i] << " ";
+	cout << "Argument " << j << ": " << argv[j] << endl;
+	j++;
 	}
-	cout << endl;
-
-	// work/tests go here
-	cout << "After Changes: ";
-	for(int i = 0; i < nums.size(); i++){
-		cout << nums[i] << " ";
-	}
-	cout << endl;
-	cout << endl;
-
+*/
+	
 	return 0;
 }
