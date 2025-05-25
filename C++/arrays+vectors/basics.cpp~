@@ -130,6 +130,8 @@ int main(/*int argc, char* argv[]*/){
 	j++;
 	}
 */
-	
+	vector<char> alphabet[] = {'a','b','c','d','e','f','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'};	
+	char letter = find(alphabet.begin(), alphabet.end(), alphabet[15-1]);
+	cout << letter;
 	return 0;
 }
