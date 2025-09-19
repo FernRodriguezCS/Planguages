@@ -1,6 +1,3 @@
-#include <iostream>
-using namespace std;
-
 /*
     KEY Concepts:
     -Understanding Modulus(%)
@@ -29,7 +26,3 @@ using namespace std;
     isalpha(char) / isdigit(char) -> in strings
     to_string(num) and stoi(str) for conversions
 */
-int main(){
-
-    return 0;
-}
